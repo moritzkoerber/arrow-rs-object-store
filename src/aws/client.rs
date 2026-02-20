@@ -981,6 +981,7 @@ mod tests {
         };
 
         let config = S3Config {
+            endpoint: Some(mock.url().to_string()),
             bucket_endpoint: mock.url().to_string(),
             bucket: "test-bucket".to_string(),
             region: "us-east-1".to_string(),
